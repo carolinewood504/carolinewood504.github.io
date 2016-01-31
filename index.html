@@ -3,45 +3,74 @@
 <head>
 	<title>Caroline's Life After College</title>
 
-
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<h1>Life After College</h1>
+<nav>
+  <ul class="navigation">
+    <li>
+      <a href="/AboutMe/index.html">About Me</a>
+    </li>
+    <li>
+      <a href="/Resources/index.html">Resources</a>
+    </li>
+  </ul>
+</nav>
+<h1 id="firstline">Life After College</h1>
+<div>
+	<p class="greenback" id="welcome">Hello and Welcome to Caroline's Site</p>
 
-	<p>Hello and Welcome to Caroline's Site</p>
-<img src="https://yt3.ggpht.com/-mFo27EtzsY8/AAAAAAAAAAI/AAAAAAAAAAA/WbNSjnC94Z0/s900-c-k-no/photo.jpg" alt="UF"/>
-	<p>I graduated University of Florida back in May.  <strong><em>But what am I doing now?</em> </strong> Well, I moved to Baltimore in June and since then, have explored a lot of DelMarVa.  From Harper's Ferry to Annapolis to Washington I have <strong>loved</strong> it so far. </p>
+	<p id="aboutme">I graduated <span id="schoolpride">University of Florida </span> back in May.  <strong><em>But what am I doing now?</em> </strong> Well, I moved to Baltimore in June and since then, have explored a lot of DelMarVa.  From Harper's Ferry to Annapolis to Washington I have <strong>loved</strong> it so far. </p>
+</div>
 
 	<br/>
 	<h2>My interests</h2>
+
 	<ul>
-	<li>Trail running</li>
-	<li>Cooking vegan</li>
-	<li>Coding</li>
-	<li>REI</li>
-	<li>Food manufacturing</li>
+	<div class="samecolor">
+	<li id="trailrun">Trail running</li>
+	<li id="vegan">Cooking vegan</li>
+	<li id="coding">Coding</li>
+	<li id="optoutside">REI</li>
+	<li id="food">Food manufacturing</li>
+	</div>
+	
 </ul>
+<br/>
 <table>
 <tr>
 		<th>Places Seen</th>
 		<th>Places to Go</th>
 	</tr>
 <tr>
-		<td>Annapolis</td>
-		<td>Rehoboth</td>
+		<td class="table-data">Annapolis</td>
+		<td class="table-data">Rehoboth</td>
 </table>
 
-	<h2>My links</h2>
-	<br/>
-	<a href= "https://www.google.com" target="_blank">Visit my website to learn more about my adventures!</a> 
+	<h2 id="large-border">My links</h2>
+	<a href= "https://www.google.com" target="_blank" id="google">Visit my website to learn more about my adventures!</a> 
 
 	<!-- provide link  and open it in a new tab through target command -->
 
-	<p>Here are some great pictures I would like to share: <a href="http://www.facebook.com">View my Facebook</a></p>
+	<p id="pics">Here are some great pictures I would like to share: <a href="http://www.facebook.com">View my Facebook</a></p>
 <br/>
-<p>Contact me via <a href="mailto:carolinewood504@gmail.com">email</a></p>
+<p id="contact">Contact me via <a href="mailto:carolinewood504@gmail.com">email</a></p>
 
-<img src="http://i.imgur.com/CMpQ7zG.jpg" alt="Iceland Love">
+<img id="pic" src="http://i.imgur.com/CMpQ7zG.jpg" alt="Iceland Love">
+<button id="clickMe" onclick="sayHi()">Click Me!</button>
+
 </body>
+
+<script type="text/javascript">
+alert('Hello World');
+
+var myelement = document.getElementById('clickMe')
+myelement.onmouseover = function () (console.log("Entering!");
+  myelement.style.background="navy"
+
+};
+
+
+</script>
 </html>
